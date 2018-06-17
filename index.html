@@ -172,26 +172,5 @@
           </script>
          
           <script type="text/javascript" src="js/action.js"></script>
-          <script>
-              
-            $.ajax({
-                method:"GET",
-                url: 'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97',
-                dataType: 'json' ,
-                success:function (data){
-                    console.log(typeof(data));
-
-                }
-
-            })
-
-            .done(function(msg){
-                console.log('全部:', msg);
-                //console.log('name:',msg.results[0])
-                //宣告變數
-                //var name = msg.results[0].name;
-                //$('h1').html(add)
-                
-            });
-          </script>
+         
 </body></html>
