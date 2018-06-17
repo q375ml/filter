@@ -170,19 +170,19 @@
           </script>
           <script>
             $(function(){
-              $.ajax({
-                url:'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97',
-                dataType:'json'
-              })
-              
-              .then(function (res) {
-                console.log("success:",res)
-                $('h1').html(res.data.name)
-                $('.info p').html(res.data.description)
-              }),function(err) {
-                console.log("error:", err)
-              }
-            })
+                $('.datebox .title').on('click',function(){
+                    $('.datemobile').slideToggle();
+                    $(this).find('i').toggleClass('fa-minus').toggleClass('fa-plus');
+                    
+                })
+
+                $('.categoriesbox .title').on('click',function(){
+                    $('.categoriesmobile').slideToggle();
+                    $(this).find('i').toggleClass('fa-minus').toggleClass('fa-plus');
+                })
+                
+            });
+
           </script>
     
 </body></html>
