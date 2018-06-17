@@ -296,6 +296,7 @@ main{
     .mainbox{
         width: 100%;
         margin: 0px;
+        padding-left:0px
     }
     .tipe{
         width: 10%;
